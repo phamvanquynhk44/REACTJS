@@ -1,18 +1,102 @@
 .section-specialty{
-    height: 300px;
+    height: 330px;
     background: #f5f5f5;
     border: 1px solid red;
-}
 
-//reset slick slider css
+    .specialty-container{
+        margin: 0 50px;
+        display: flex;
+        flex-direction: column;
 
-.slick-prev{
-    border: 1px solid green !important;
-    position: relative !important;
-    left: 0 !important;
-}
+        .specialty-header{
+            display: flex;
+            height: 60px;
+            padding: 16px 100px;
+            margin-bottom: 20px;
 
-.slick-next{
-    border: 1px solid red !important;
-    left: 0 !important;
+            .specialty-title{
+                font-size: 28px;
+                font-weight: bold;   
+            }
+
+            .specialty-btn{
+                position: absolute;
+                right: 160px;
+                padding: 10px 15px;
+                background: #ebebeb;
+                color: #282e41;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                text-transform: uppercase;
+
+                &:hover{
+                    background: #FFC419;
+                    color: white;
+                }
+            }
+        }
+
+        .specialty-body{
+
+            padding: 0px 100px;
+
+            .img-customize{
+                cursor: pointer;    
+                color: #111;
+                padding: 5px 0;
+                font-size: 13px;
+
+                img{
+                    width: 329px;
+                    height: 201px;
+                }
+
+                &:hover{
+                    color: rgb(31, 163, 230);
+                }
+            }
+
+            //reset slick slider css
+            .slick-prev{
+                left: -10px !important;
+                z-index: 1000 !important;
+                width: 44px !important;
+                height: 48px !important;
+                background: #f4f1f1 !important;
+                border: 2px solid #d7d7d7 !important;
+
+                &:hover{
+                    background: #fff !important;
+                }
+            }
+
+            .slick-prev::before{
+                font-family: 'Glyphicons Halflings' !important;
+            //   font-family: FontAwesome !important;
+                color: #959595 !important;
+            //  content: "\e257" !important;
+            }
+
+            .slick-next{
+                right: -10px !important;
+                width: 44px !important;
+                height: 48px !important;
+                background: #f4f1f1 !important;
+                border: 2px solid #d7d7d7 !important;
+
+                &:hover{
+                    background: #fff !important;
+                }
+            }
+
+            .slick-next::before{
+                // font-family: FontAwesome !important;
+                // color: red !important;
+            font-family: 'Glyphicons Halflings' !important;
+            color: #959595 !important;
+            }
+        }
+    }
+
 }
